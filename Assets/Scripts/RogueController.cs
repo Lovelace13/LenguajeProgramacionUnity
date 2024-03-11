@@ -13,7 +13,6 @@ public class RogueController : MonoBehaviour
 
     private Rigidbody2D roguerigidbody2;
     private SpriteRenderer mySpriteRenderer;
-    private string lastHorizontalDirection = "right";
     private Sprite[] currentSpriteArray;
     public Sprite[] walkRightSprites;
     public Sprite[] walkLeftSprites;
