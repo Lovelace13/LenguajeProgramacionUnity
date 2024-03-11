@@ -7,7 +7,7 @@ public class BulletController : MonoBehaviour
 {
     private Rigidbody2D myrigidbody2D;
     public float bulletSpeed = 10f;
-    //public GameManager myGameManager;
+    public GameManager myGameManager;
 
 
     // Start is called before the first frame update
@@ -24,7 +24,7 @@ public class BulletController : MonoBehaviour
         }
         else if (collision.CompareTag("ItemBad"))
         {
-            //myGameManager.
+            myGameManager.AddScore();
             Destroy(collision.gameObject);
         }
     }
